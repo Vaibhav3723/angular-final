@@ -16,6 +16,6 @@ export class LoginComponent implements OnInit {
 btnClick()
 {
  
-  this.snack.open("Submitted Successfully","OK!")
+  this.snack.open("Please Login","OK")
 }
 }

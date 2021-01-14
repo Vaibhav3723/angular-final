@@ -13,7 +13,8 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
   }
 btnClick(){
+
   console.log("btn click");
-  this.snack.open("Hey Welcome","ok")
+  
 }
 }

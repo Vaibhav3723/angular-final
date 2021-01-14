@@ -16,6 +16,15 @@ import {MatIconModule} from '@angular/material/icon';
 import { RegistrationComponent } from './components/registration/registration.component';
 import { HomeComponent } from './components/home/home.component';
 import {MatCardModule} from '@angular/material/card';
+import { AboutComponent } from './components/about/about.component';
+import { CoursesComponent } from './components/courses/courses.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { FacultyComponent } from './components/faculty/faculty.component';
+import { CampuslifeComponent } from './components/campuslife/campuslife.component';
+import { EnquiryComponent } from './components/enquiry/enquiry.component';
+import { PlacementComponent } from './components/placement/placement.component';
+import { SignupComponent } from './components/signup/signup.component';
+import {MatInputModule} from '@angular/material/input';
 
 
 
@@ -23,14 +32,17 @@ import {MatCardModule} from '@angular/material/card';
   declarations: [
     AppComponent,
     NavbarComponent,
-  
     LoginComponent,
- 
-  
     RegistrationComponent,
- 
-  
-    HomeComponent
+    HomeComponent,
+    AboutComponent,
+    CoursesComponent,
+    ContactComponent,
+    FacultyComponent,
+    CampuslifeComponent,
+    EnquiryComponent,
+    PlacementComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,
@@ -41,7 +53,8 @@ import {MatCardModule} from '@angular/material/card';
     MatFormFieldModule,
     MatToolbarModule,
     MatIconModule,
-    MatCardModule
+    MatCardModule,
+    MatInputModule
   ],
   providers: [MatSnackBar],
   bootstrap: [AppComponent]

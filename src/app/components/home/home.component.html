@@ -2,14 +2,35 @@
 <div class="container">
   <h1>USM's 
     Shriram Mantri
-  Vidyanidhi Education Complex,Mumbai</h1>
+  Vidyanidhi Education Complex,Mumbai
+</h1>
 </div>
+
 <div class="container2">
-     
-  <button mat-flat-button color="primary" (click)="btnClick()">Login</button>
-  <button mat-flat-button color="primary" (click)="btnClick()">Registration</button>
-  
+  <div class="card">
+    
+    <div class="example-container">
+      <mat-form-field appearance="fill">
+        <mat-label>User Id</mat-label>
+        <input matInput type="varchar" class="example-bottom-align">
+        <span matPrefix></span>
+        <span matSuffix></span>
+      </mat-form-field>
+      <br>
+      <mat-form-field appearance="fill">
+        <mat-label>password</mat-label>
+        <input matInput [type]="hide ? 'password' : 'text'">
+        <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+        <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+        </button>
+      </mat-form-field>
+    </div>
+       </div>
+  <a routerLink="/login" mat-raised-button color="accent" >Login &nbsp;</a>
+  <a routerLink="/registration" mat-flat-button color="primary">Registration</a>
+
   </div>
+
      <div>
      <mat-card class="example-card">
       <mat-card-header>
