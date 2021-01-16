@@ -28,6 +28,10 @@ import {MatInputModule} from '@angular/material/input';
 import { FooterComponent } from './components/footer/footer.component';
 import { FaqComponent } from './components/faq/faq.component';
 import {MatSelectModule} from '@angular/material/select';
+import { MatRadioModule, MatTableModule } from '@angular/material';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { AllEnquiriesComponent } from './components/enquiries/allenquiry.component';
 
 
 
@@ -46,6 +50,7 @@ import {MatSelectModule} from '@angular/material/select';
     CampuslifeComponent,
     EnquiryComponent,
     PlacementComponent,
+    AllEnquiriesComponent,
   
     FooterComponent,
   
@@ -65,7 +70,11 @@ import {MatSelectModule} from '@angular/material/select';
     MatCardModule,
     MatInputModule,
     MatSelectModule,
-  
+    MatRadioModule,
+    ReactiveFormsModule,
+    FormsModule,
+    HttpClientModule,
+    MatTableModule
   ],
   providers: [MatSnackBar],
   bootstrap: [AppComponent]

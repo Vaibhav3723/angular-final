@@ -2,16 +2,16 @@
        
     <div class="container">
         <h1>Login</h1>
-             <form action="" method="post" name="login">
+             <form action="" method="post" name="login" [formGroup]="form">
                      <div class="form-group">
                         <label for="Useid">User ID &nbsp;</label>
-                        <input type="userid" name="userid"  class="form-control" id="userid" aria-describedby="emailHelp" placeholder="Enter User ID">
+                        <input type="userid" name="userid" [formControlName]="'id'" class="form-control" id="userid" aria-describedby="emailHelp" placeholder="Enter User ID">
                      </div>
                      <br>
                      
                      <div class="form-group">
                         <label for="password">Password &nbsp;</label>
-                        <input type="password" name="password" id="password"  class="form-control" aria-describedby="emailHelp" placeholder="Enter Password">
+                        <input type="password" name="password" id="password" [formControlName]="'password'" class="form-control" aria-describedby="emailHelp" placeholder="Enter Password">
                      </div>
                      <br>
                      <div class="col-md-12 text-center ">

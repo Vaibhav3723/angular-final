@@ -1,0 +1,38 @@
+{
+  "faculty": [
+    {
+      "id": 1,
+      "age": 16,
+      "name": "Andy"
+    },
+    {
+      "id": 2,
+      "age": 22,
+      "name": "Lisa"
+    }
+  ],
+  "enquiries": [
+    {
+      "id": "1",
+      "course": "PG-DBDA",
+      "fullName": "drefre",
+      "gender": "female",
+      "message": "erre",
+      "mobileNumber": "233"
+    }
+  ],
+  "login": [
+    {
+      "id": 1,
+      "userName": "Admin",
+      "password": "Admin",
+      "role": "Admin"
+    },
+    {
+      "id": 2,
+      "userName": "Faculty",
+      "password": "Faculty",
+      "role": "Faculty"
+    }
+  ]
+}

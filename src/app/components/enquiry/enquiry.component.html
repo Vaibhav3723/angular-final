@@ -1,53 +1,53 @@
+<mat-card class="example-card">
 
+  <mat-card-header>
+    <mat-card-title>Contact US</mat-card-title>
+  </mat-card-header>
 
-	
-   
-  <mat-card class="example-card">
+  <img mat-card-image src="/assets/enquiry.png" alt="enquiry">
+  <mat-card-content>
 
-    <mat-card-header>
-      <mat-card-title>Contact US</mat-card-title>
-    </mat-card-header>
-   
-    <img mat-card-image src="/assets/enquiry.png" alt="enquiry">
-    <mat-card-content>
-   
-      <form class="example-full-width" >
-       
+    <form class="example-full-width" [formGroup]="form">
+
       <mat-form-field class="example-full-width">
-          <mat-label>Full Name</mat-label>
-          <input matInput>
-        </mat-form-field>
-      
-     <br>
-     <mat-form-field class="example-ful-width">
-      <mat-label>Mobile Number</mat-label>
-      <span matPrefix>+91 &nbsp;</span>
-      <input type="mob" matInput placeholder="7028303527">
-      <mat-icon matSuffix>mode_edit</mat-icon>
+        <mat-label>Full Name</mat-label>
+        <input matInput [formControlName]="'fullName'">
+      </mat-form-field>
+
+      <br>
+      <mat-form-field class="example-ful-width">
+        <mat-label>Mobile Number</mat-label>
+        <span matPrefix>+91 &nbsp;</span>
+        <input type="mob" matInput placeholder="7028303527" [formControlName]="'mobileNumber'">
+        <mat-icon matSuffix>mode_edit</mat-icon>
       </mat-form-field><br>
-    
-      <form class="example-form">
-        <mat-form-field class="example-fulll-width">
-          <mat-label>Message</mat-label>
-          <input matInput #message maxlength="256" placeholder="Ex. I need help with...">
-          <mat-hint align="start"><strong>Don't disclose personal info</strong> </mat-hint>
-          <mat-hint align="end">{{message.value.length}} / 256</mat-hint>
-        </mat-form-field>
- <br><br>
 
-			Male<input type="radio" name="gender" value="male">
-      Female<input type="radio" name="gender" value="Female">
-      Other<input type="radio" name="gender" value="other"><br><br>
-      
+      <mat-form-field class="example-fulll-width">
+        <mat-label>Message</mat-label>
+        <input matInput #message maxlength="256" placeholder="Ex. I need help with..." [formControlName]="'message'">
+        <mat-hint align="start"><strong>Don't disclose personal info</strong> </mat-hint>
+        <mat-hint align="end">{{message.value.length}} / 256</mat-hint>
+      </mat-form-field>
+      <br><br>
+      <mat-radio-group aria-label="Select gender" [formControlName]="'gender'">
+        <mat-radio-button value="male">Male</mat-radio-button>
+        <mat-radio-button value="female">Female</mat-radio-button>
+        <mat-radio-button value="other">Other</mat-radio-button>
+      </mat-radio-group>
 
-			Choose Course:
-			<select name="queriesoption"><option>PG-DAC</option>
-				<option>PG-DBDA</option>
+      <br><br>
+      Choose Course:
+      <select name="queriesoption" [formControlName]="'course'">
+        <option>PG-DAC</option>
+        <option>PG-DBDA</option>
         <option>PRE-CAT</option>
       </select>
       <br><br>
-     
+
       Upload File:<input type="file" name="file"><br><br>
-      <button  type="submit" mat-raised-button color="primary">Submit</button>
-  </form> 
- 
+      <button type="submit" mat-raised-button color="primary" (click)="submitFn()">Submit</button>
+      <div *ngIf="success">
+        "Your enquiry submitted successfully"
+      </div>
+
+    </form>
