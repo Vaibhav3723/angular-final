@@ -5,12 +5,13 @@ import { HomeComponent } from './components/home/home.component';
 import {LoginComponent} from './components/login/login.component';
 import {RegistrationComponent} from './components/registration/registration.component';
 import {CoursesComponent} from './components/courses/courses.component';
-import { ContactComponent } from './components/contact/contact.component';
+
 import { EnquiryComponent} from './components/enquiry/enquiry.component';
 import {PlacementComponent} from './components/placement/placement.component';
-import {SignupComponent} from './components/signup/signup.component';
+
 import {FacultyComponent} from './components/faculty/faculty.component';
 import {CampuslifeComponent} from './components/campuslife/campuslife.component';
+import { FaqComponent } from './components/faq/faq.component';
 
 const routes: Routes = [
   { path:'home', component:HomeComponent},
@@ -18,12 +19,13 @@ const routes: Routes = [
   { path:'registration', component: RegistrationComponent},
   { path:'about', component: AboutComponent},
   { path:'courses', component: CoursesComponent},
-  { path:'contact', component: ContactComponent},
+  
   { path:'enquiry', component:EnquiryComponent},
   { path:'placement', component: PlacementComponent},
-  { path:'signup', component: SignupComponent},
+  
   { path:'faculty', component: FacultyComponent},
-  {path:'campuslife', component: CampuslifeComponent}
+  {path:'campuslife', component: CampuslifeComponent},
+  {path:'faq', component: FaqComponent}
 ];
 
 @NgModule({

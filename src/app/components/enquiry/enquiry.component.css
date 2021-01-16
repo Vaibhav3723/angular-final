@@ -1,0 +1,33 @@
+.example-form {
+    min-width: 100px;
+    max-width: 300px;
+    width: 100%;
+  }
+  
+  .example-full-width {
+    width: 45%;
+  }
+
+  
+  .example-ful-width{
+      width:45%;
+  }
+  .example-fulll-width{
+      width:90%;
+  }
+  
+  td {
+    padding-right: 8px;
+  }
+  .example-card{
+      margin-left:50px;
+      background-position: 100%;
+      
+  }
+  img{
+      max-width: 500px;
+      float:right;
+      margin-right:100px;
+      max-height:220px;
+  }
+ 

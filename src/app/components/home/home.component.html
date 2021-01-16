@@ -6,39 +6,14 @@
 </h1>
 </div>
 
-<div class="container2">
-  <div class="card">
-    
-    <div class="example-container">
-      <mat-form-field appearance="fill">
-        <mat-label>User Id</mat-label>
-        <input matInput type="varchar" class="example-bottom-align">
-        <span matPrefix></span>
-        <span matSuffix></span>
-      </mat-form-field>
-      <br>
-      <mat-form-field appearance="fill">
-        <mat-label>password</mat-label>
-        <input matInput [type]="hide ? 'password' : 'text'">
-        <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
-        <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
-        </button>
-      </mat-form-field>
-    </div>
-       </div>
-  <a routerLink="/login" mat-raised-button color="accent" >Login &nbsp;</a>
-  <a routerLink="/registration" mat-flat-button color="primary">Registration</a>
-
-  </div>
-
      <div>
      <mat-card class="example-card">
       <mat-card-header>
-        <h1>About Us</h1>
+        
         <div mat-card-avatar class="example-header-image"></div>
-        <mat-card-title>SMVITA</mat-card-title>
+        <mat-card-title>CDAC SMVITA Authorised Training Center</mat-card-title>
       </mat-card-header>
-      <img mat-card-image src="assets/home1.png" alt="VITA">
+      <img mat-card-image  src="assets/home1.png" alt="VITA">
       <mat-card-content>
         <h3> <p>The Centre for Development of Advanced Computing is an Autonomous
           Scientific Society of the Ministry
@@ -49,5 +24,7 @@
                and CEDTI were merged into C-DAC in 2003.</p></h3>         
       </mat-card-content>
     </mat-card>
-  </div>
-    
+ 
+  
+
+</div>

@@ -18,4 +18,8 @@ btnClick()
  
   this.snack.open("Please Login","OK")
 }
+btnClickk()
+{
+  this.snack.open("please register","OK")
+}
 }

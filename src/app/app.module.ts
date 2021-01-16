@@ -18,13 +18,17 @@ import { HomeComponent } from './components/home/home.component';
 import {MatCardModule} from '@angular/material/card';
 import { AboutComponent } from './components/about/about.component';
 import { CoursesComponent } from './components/courses/courses.component';
-import { ContactComponent } from './components/contact/contact.component';
+
 import { FacultyComponent } from './components/faculty/faculty.component';
 import { CampuslifeComponent } from './components/campuslife/campuslife.component';
 import { EnquiryComponent } from './components/enquiry/enquiry.component';
 import { PlacementComponent } from './components/placement/placement.component';
-import { SignupComponent } from './components/signup/signup.component';
+
 import {MatInputModule} from '@angular/material/input';
+import { FooterComponent } from './components/footer/footer.component';
+import { FaqComponent } from './components/faq/faq.component';
+import {MatSelectModule} from '@angular/material/select';
+
 
 
 
@@ -37,12 +41,17 @@ import {MatInputModule} from '@angular/material/input';
     HomeComponent,
     AboutComponent,
     CoursesComponent,
-    ContactComponent,
+
     FacultyComponent,
     CampuslifeComponent,
     EnquiryComponent,
     PlacementComponent,
-    SignupComponent
+  
+    FooterComponent,
+  
+    FaqComponent,
+  
+
   ],
   imports: [
     BrowserModule,
@@ -54,7 +63,9 @@ import {MatInputModule} from '@angular/material/input';
     MatToolbarModule,
     MatIconModule,
     MatCardModule,
-    MatInputModule
+    MatInputModule,
+    MatSelectModule,
+  
   ],
   providers: [MatSnackBar],
   bootstrap: [AppComponent]

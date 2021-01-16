@@ -1,0 +1,22 @@
+.bar{
+  margin-left:20px;
+   
+  
+     
+}
+img{
+    width:fit-content;
+}
+h1{
+    text-align: center;
+}
+.text-justify{
+    text-align: left;
+}
+p{
+    font-family: Arial, "Times New Roman";
+    font-size: 17px;
+    font-weight: 100;
+    text-align: justify;
+
+}

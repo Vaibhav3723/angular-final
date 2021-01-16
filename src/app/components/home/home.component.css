@@ -12,11 +12,12 @@
     margin-left: 10px;
 }
 .example-card {
-    max-width: 650px;
+    
+height:auto;
   }
   
   .example-header-image {
-
+  
     background-size: cover;
   }
   .intro{
@@ -38,4 +39,14 @@
   input.example-right-align {
     -moz-appearance: textfield;
   }
- 
+ #c1{
+ float: left;
+   font-size: 1.4vw;
+ }
+ img{
+   width:100%;
+   max-height: 500px;
+ }
+ h3{
+   max-width: 600px;
+ }

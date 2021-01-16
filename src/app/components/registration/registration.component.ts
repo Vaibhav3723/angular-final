@@ -14,6 +14,6 @@ export class RegistrationComponent implements OnInit {
   btnClick()
   {
    
-    this.snack.open("Please Register From","OK")
+    this.snack.open("Please Register From","Cancel")
   }
 }
