@@ -13,6 +13,7 @@ import {FacultyComponent} from './components/faculty/faculty.component';
 import {CampuslifeComponent} from './components/campuslife/campuslife.component';
 import { FaqComponent } from './components/faq/faq.component';
 import { AllEnquiriesComponent } from './components/enquiries/allenquiry.component';
+import { AdminViewComponent } from './components/adminview/adminview.component';
 
 const routes: Routes = [
   { path:'home', component:HomeComponent},
@@ -27,7 +28,8 @@ const routes: Routes = [
   { path:'faculty', component: FacultyComponent},
   {path:'campuslife', component: CampuslifeComponent},
   {path:'faq', component: FaqComponent},
-  {path:'enquiries',component: AllEnquiriesComponent}
+  {path:'enquiries',component: AllEnquiriesComponent},
+  {path: 'adminView',component: AdminViewComponent}
 ];
 
 @NgModule({

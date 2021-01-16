@@ -10,7 +10,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class EnquiryComponent implements OnInit {
   public form: FormGroup;
-  public id = 2;
+  public id = 1;
   public success = false;
   public url = 'http://localhost:3000';
   constructor(private formBuilder: FormBuilder, private http: HttpClient) {
@@ -24,7 +24,10 @@ export class EnquiryComponent implements OnInit {
   }
 
   ngOnInit() {
-
+    this.http.get(this.url + '/enquiries').subscribe((resp:any) => {
+      this.id = resp.length + 1;
+    }, (err) => {
+    });
   }
 
   submitFn() {

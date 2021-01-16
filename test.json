@@ -9,16 +9,55 @@
       "id": 2,
       "age": 22,
       "name": "Lisa"
+    },
+    {
+      "age": "22",
+      "name": "Shrikant",
+      "id": 3
+    },
+    {
+      "age": "23",
+      "name": "aanchal",
+      "id": 4
+    },
+    {
+      "age": "def",
+      "name": "sss",
+      "id": 5
     }
   ],
   "enquiries": [
     {
       "id": "1",
       "course": "PG-DBDA",
-      "fullName": "drefre",
-      "gender": "female",
+      "fullName": "shrikant",
+      "gender": "male",
       "message": "erre",
       "mobileNumber": "233"
+    },
+    {
+      "id": 2,
+      "fullName": "Aanchal",
+      "mobileNumber": "78737676",
+      "message": "My View",
+      "gender": "female",
+      "course": "PG-DAC"
+    },
+    {
+      "id": 3,
+      "fullName": "frefer",
+      "mobileNumber": "frefer",
+      "message": "frefe",
+      "gender": "male",
+      "course": "PG-DAC"
+    },
+    {
+      "id": 4,
+      "fullName": "www",
+      "mobileNumber": "r343",
+      "message": "vgdg",
+      "gender": "male",
+      "course": "PG-DAC"
     }
   ],
   "login": [
@@ -33,6 +72,12 @@
       "userName": "Faculty",
       "password": "Faculty",
       "role": "Faculty"
+    },
+    {
+      "id": 3,
+      "userName": "Admin",
+      "password": "Admin",
+      "role": "Admin"
     }
   ]
 }

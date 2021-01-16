@@ -1,0 +1,52 @@
+<div class="padding-10">
+    <button routerLink="#" mat-flat-button color="accent" (click)="viewFaculty()">View Faculty </button>&nbsp;
+    <button routerLink="#" mat-flat-button color="accent" (click)="addFaculty()">Add Faculty </button>&nbsp;
+    
+    <div *ngIf="addFacultyFeature">
+        <form action="" method="post" name="login" [formGroup]="form">
+            <div class="form-group">
+               <label for="Useid">Name&nbsp;</label>
+               <input type="text" name="userid" [formControlName]="'name'" class="form-control" id="userid" aria-describedby="emailHelp" placeholder="Enter User ID">
+            </div>
+            <br>
+            
+            <div class="form-group">
+               <label for="password">Age &nbsp;</label>
+               <input type="text" name="password" id="password" [formControlName]="'age'" class="form-control" aria-describedby="emailHelp" placeholder="Enter Password">
+            </div>
+            <br>
+            <div class="col-md-12 text-center ">
+                <button routerLink="#" mat-flat-button color="accent" (click)="addFacultyFeature = false">Close </button>&nbsp;
+            <button routerLink="#" mat-flat-button color="accent" (click)="addFacultyMember()">Add </button>&nbsp;
+            </div>
+     </form>
+    </div>
+
+    <div *ngIf="showfaculty">
+        <h4>List of All Faculty members</h4>
+        <table mat-table [dataSource]="dataSource" class="mat-elevation-z8 faculty-table" >
+    
+            <!--- Note that these columns can be defined in any order.
+                  The actual rendered columns are set as a property on the row definition" -->
+            <!-- Position Column -->
+            <ng-container matColumnDef="name">
+              <th mat-header-cell *matHeaderCellDef> Name </th>
+              <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+            </ng-container>
+          
+            <!-- Name Column -->
+            <ng-container matColumnDef="age">
+              <th mat-header-cell *matHeaderCellDef> Age </th>
+              <td mat-cell *matCellDef="let element"> {{element.age}} </td>
+            </ng-container>
+          
+          
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+          </table>
+    </div>
+    
+      
+    
+    <app-allenquiry></app-allenquiry>
+</div>

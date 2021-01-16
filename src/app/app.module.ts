@@ -32,6 +32,7 @@ import { MatRadioModule, MatTableModule } from '@angular/material';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { AllEnquiriesComponent } from './components/enquiries/allenquiry.component';
+import { AdminViewComponent } from './components/adminview/adminview.component';
 
 
 
@@ -51,6 +52,7 @@ import { AllEnquiriesComponent } from './components/enquiries/allenquiry.compone
     EnquiryComponent,
     PlacementComponent,
     AllEnquiriesComponent,
+    AdminViewComponent,
   
     FooterComponent,
   
